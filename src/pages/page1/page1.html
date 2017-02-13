@@ -3,7 +3,18 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
+
     <ion-title>Page One</ion-title>
+    
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+
+      <input type="text" name="username" placeholder="Username" ngModel required>
+      <input type="password" name="password" placeholder="Password" ngModel required>
+
+      <button type="submit" [disabled]="!loginForm.valid">Submit</button>
+
+    </form>
+
   </ion-navbar>
 </ion-header>
 

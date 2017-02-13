@@ -1,3 +1,16 @@
 page-page1 {
-
+    #loginForm {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        input {
+            padding: 0.2em;
+            margin: auto;
+        }
+    }
+    ion-title {
+        display: block;
+        float: left;
+        margin: auto;
+    }
 }
